@@ -132,7 +132,7 @@ begin
         w_stop <= '0';  wait for k_clk_period;
             assert w_floor = "0001" report "bad down on floor1" severity failure; 
         w_stop <= '0'; w_up_down <= '1';  wait for k_clk_period;
-            assert w_floor = "0011" report "bad up from floor1" severity failure;
+            assert w_floor = "0010" report "bad up from floor1" severity failure;
             
 
 		-- rest of cases
